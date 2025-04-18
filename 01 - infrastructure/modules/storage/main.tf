@@ -46,7 +46,7 @@ resource "aws_s3_bucket_policy" "network" {
           "${aws_s3_bucket.network.arn}/*"  # all bucket contents
         ],
         Condition = {
-          StringNotEquals = {
+          StringEquals = {
             "aws:sourceVpce" = "${var.s3_vpce_id}"  # explicit allow of requests coming from the VPC endpoint
           }
         }
