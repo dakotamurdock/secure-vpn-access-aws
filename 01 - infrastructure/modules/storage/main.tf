@@ -6,6 +6,7 @@ resource "aws_s3_bucket" "network" {
   tags = {
     Environment = var.environment
   }
+  
 }
 
 # Upload the index.html network test page to the bucket
@@ -15,6 +16,8 @@ resource "aws_s3_object" "index" {
   content_type = "text/html"
   source = "${var.test_objects_src}/index.html"
   etag = filemd5("${var.test_objects_src}/index.html")
+
+  depends_on = [ aws_s3_bucket.network ]
 }
 
 # Upload the logo.jpg network test logo to the bucket
@@ -23,6 +26,8 @@ resource "aws_s3_object" "logo" {
   key    = "logo.jpg"
   source = "${var.test_objects_src}/logo.jpg"
   etag = filemd5("${var.test_objects_src}/logo.jpg")
+
+  depends_on = [ aws_s3_bucket.network ]
 }
 
 # Use a bucket policy to restrict access to the bucket to only come through the configured VPCe
@@ -48,6 +53,8 @@ resource "aws_s3_bucket_policy" "network" {
       }
     ]
   })
+
+  depends_on = [ aws_s3_object.index, aws_s3_object.logo ]
 }
 
 # Configure S3 bucket for stating web hosting
@@ -64,7 +71,7 @@ resource "aws_s3_bucket_public_access_block" "network-public-access-block" {
   bucket = aws_s3_bucket.network.id
 
   block_public_acls       = true
-  block_public_policy     = true
+  block_public_policy     = false
   ignore_public_acls      = true
   restrict_public_buckets = true
 }
