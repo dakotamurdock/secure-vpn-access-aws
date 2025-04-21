@@ -8,5 +8,5 @@ Set-Up OpenVPN
    1. Login to client portal
    2. Download Connection Profile
    3. Open the OpenVPN Connect App
-   4. Put in URL
-   5. Import after connect
+   4. Load the Connection Profile
+   5. Connect

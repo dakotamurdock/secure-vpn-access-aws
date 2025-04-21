@@ -1,0 +1,60 @@
+(3.11.9) dakotamurdock@Dakotas-MacBook-Air course-project % iperf3 -c 10.0.1.153
+Connecting to host 10.0.1.153, port 5201
+[  5] local 172.27.232.3 port 64667 connected to 10.0.1.153 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  7.62 MBytes  63.9 Mbits/sec                  
+[  5]   1.00-2.01   sec  5.88 MBytes  49.1 Mbits/sec                  
+[  5]   2.01-3.00   sec  6.88 MBytes  57.9 Mbits/sec                  
+[  5]   3.00-4.01   sec  6.62 MBytes  55.4 Mbits/sec                  
+[  5]   4.01-5.01   sec  7.00 MBytes  58.7 Mbits/sec                  
+[  5]   5.01-6.01   sec  6.75 MBytes  56.6 Mbits/sec                  
+[  5]   6.01-7.01   sec  6.50 MBytes  54.5 Mbits/sec                  
+[  5]   7.01-8.00   sec  6.88 MBytes  57.8 Mbits/sec                  
+[  5]   8.00-9.00   sec  6.75 MBytes  56.7 Mbits/sec                  
+[  5]   9.00-10.01  sec  6.38 MBytes  53.3 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.01  sec  67.2 MBytes  56.4 Mbits/sec                  sender
+[  5]   0.00-10.13  sec  65.1 MBytes  53.9 Mbits/sec                  receiver
+
+iperf Done.
+(3.11.9) dakotamurdock@Dakotas-MacBook-Air course-project % iperf3 -c 10.0.1.153
+Connecting to host 10.0.1.153, port 5201
+[  5] local 172.27.232.3 port 64672 connected to 10.0.1.153 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.01   sec  5.88 MBytes  49.0 Mbits/sec                  
+[  5]   1.01-2.01   sec  5.50 MBytes  46.1 Mbits/sec                  
+[  5]   2.01-3.00   sec  6.00 MBytes  50.5 Mbits/sec                  
+[  5]   3.00-4.00   sec  6.00 MBytes  50.4 Mbits/sec                  
+[  5]   4.00-5.00   sec  6.12 MBytes  51.2 Mbits/sec                  
+[  5]   5.00-6.00   sec  5.88 MBytes  49.5 Mbits/sec                  
+[  5]   6.00-7.01   sec  6.25 MBytes  52.2 Mbits/sec                  
+[  5]   7.01-8.00   sec  6.00 MBytes  50.5 Mbits/sec                  
+[  5]   8.00-9.00   sec  6.25 MBytes  52.2 Mbits/sec                  
+[  5]   9.00-10.00  sec  6.00 MBytes  50.5 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.00  sec  59.9 MBytes  50.2 Mbits/sec                  sender
+[  5]   0.00-10.11  sec  59.2 MBytes  49.2 Mbits/sec                  receiver
+
+iperf Done.
+(3.11.9) dakotamurdock@Dakotas-MacBook-Air course-project % iperf3 -c 10.0.1.153
+Connecting to host 10.0.1.153, port 5201
+[  5] local 172.27.232.3 port 64675 connected to 10.0.1.153 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.01   sec  8.00 MBytes  66.8 Mbits/sec                  
+[  5]   1.01-2.01   sec  5.00 MBytes  41.9 Mbits/sec                  
+[  5]   2.01-3.00   sec  6.50 MBytes  54.6 Mbits/sec                  
+[  5]   3.00-4.00   sec  6.62 MBytes  55.8 Mbits/sec                  
+[  5]   4.00-5.01   sec  6.50 MBytes  54.3 Mbits/sec                  
+[  5]   5.01-6.00   sec  6.88 MBytes  57.7 Mbits/sec                  
+[  5]   6.00-7.01   sec  6.50 MBytes  54.5 Mbits/sec                  
+[  5]   7.01-8.00   sec  6.50 MBytes  54.6 Mbits/sec                  
+[  5]   8.00-9.01   sec  6.50 MBytes  54.5 Mbits/sec                  
+[  5]   9.01-10.01  sec  6.50 MBytes  54.5 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.01  sec  65.5 MBytes  54.9 Mbits/sec                  sender
+[  5]   0.00-10.13  sec  64.5 MBytes  53.4 Mbits/sec                  receiver
+
+iperf Done.
